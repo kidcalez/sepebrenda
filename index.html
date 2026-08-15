@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sepebrenda — Mini Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hud">
+      <div>
+        <span class="label">PUNTOS</span>
+        <strong id="score">0</strong>
+      </div>
+      <div>
+        <span class="label">RÉCORD</span>
+        <strong id="best">0</strong>
+      </div>
+      <div>
+        <span class="label">VIDAS</span>
+        <strong id="lives">3</strong>
+      </div>
+    </section>
+
+    <section id="screen" class="screen">
+      <div class="intro">
+        <div class="badge">SEPEBRENDA</div>
+        <h1>STREAM<br><span>RUNNER</span></h1>
+        <p>Esquivá los obstáculos, juntá puntos y superá tu récord.</p>
+        <button id="startBtn">JUGAR</button>
+        <small>PC: ← → / A D · Celular: botones inferiores</small>
+      </div>
+    </section>
+
+    <div class="controls" aria-label="Controles">
+      <button id="leftBtn">◀</button>
+      <button id="rightBtn">▶</button>
+    </div>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
